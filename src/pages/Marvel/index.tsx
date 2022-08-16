@@ -37,7 +37,7 @@ export const Character = () => {
 
   return (
     <div>
-      {topMarvel.length === 0 && <p>CARREGANDO...</p>}
+      {topMarvel.length === 0 && <p>CARREGANNDO...</p>}
       {topMarvel &&
         topMarvel.map((marvel) => {
           return (
