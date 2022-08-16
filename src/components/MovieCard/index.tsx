@@ -24,7 +24,7 @@ export const MarvelCard = ({ character, showLink = true }: Props) => {
         src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
         alt='teste'
       />
-      {showLink && <Link to={`/movie/${character.id}`}>Detalhes</Link>}
+      {showLink && <Link to={`/character/${character.id}`}>Detalhes</Link>}
     </>
   );
 };
