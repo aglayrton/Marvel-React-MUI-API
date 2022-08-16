@@ -2,7 +2,7 @@ import * as React from "react";
 import { useSearchParams } from "react-router-dom";
 import md5 from "md5";
 import axios from "axios";
-import { MovieCard } from "../../components/MovieCard";
+import { MarvelCard } from "../../components/MovieCard";
 
 const baseUrl = "http://gateway.marvel.com/v1/public/characters?";
 const publicKey = "410542406bb21a64d9da21f952445f7d";
@@ -45,7 +45,7 @@ export const Search = () => {
         topMarvel.map((marvel) => {
           return (
             <div key={marvel.id}>
-              <MovieCard movie={marvel} showLink={true} />
+              <MarvelCard character={marvel} showLink={true} />
             </div>
           );
         })}
